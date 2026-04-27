@@ -11,4 +11,4 @@ def remove_missing_values(df):
 
     return df_cleaned
 
-df_processed = remove_missing_values(df_raw)
+def preprocess_data(df):
