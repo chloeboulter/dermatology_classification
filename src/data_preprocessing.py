@@ -2,6 +2,7 @@ from exploratory_data_analysis import df_raw
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
+
 def remove_missing_values(df):
     """Removes rows with missing values and reports counts"""
     initial_null_count = df.isnull().sum().sum()
@@ -19,7 +20,3 @@ def scale_features(df):
     scaled_df = pd.DataFrame(scaled_data, columns=df.columns)
     return scaled_df
 
-
-
-def preprocess_data(df):
-    print()
